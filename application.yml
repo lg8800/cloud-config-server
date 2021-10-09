@@ -7,3 +7,13 @@ eureka:
     enabled: true
   instance:
     hostname: localhost
+
+microservice:
+  payment-service: 
+    endpoints: 
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/
+  order-service:       
+    endpoints: 
+      endpoint:
+        uri: http://ORDER-SERVICE/order/
